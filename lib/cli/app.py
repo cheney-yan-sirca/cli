@@ -419,7 +419,7 @@ class CommandLineMixin(object):
             ns = self.argparser.parse_args()
         except SystemExit, e:
             if self.exit_after_main:
-                raise
+                raise e
             else:
                 raise Abort(e.code)
         self.params = self.update_params(self.params, ns)
