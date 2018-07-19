@@ -20,7 +20,7 @@ import cli as pkg
 
 setup_options = {
     "name": pkg.__project__,
-    "version": pkg.__version__,
+    "version": '1.0.0',
     "description": pkg.__description__,
     "long_description": pkg.__doc__,
     "classifiers": pkg.__classifiers__,
