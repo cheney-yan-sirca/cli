@@ -211,7 +211,7 @@ class Application(object):
             returned = returned.status
         elif isinstance(returned, self.reraise):
             # raising the last exception preserves traceback
-            raise
+            raise returned
         else:
             try:
                 returned = int(returned)
